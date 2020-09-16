@@ -6,12 +6,15 @@ inputRaio = float(input('Digite o raio do Cilindro desejado: '))
 
 inputAltura = float(input('Digite a altura do cilindro desejado: '))
 
-piEspecifico = input('A questão possui um valor de pi especificado? (Caso não, o sistema irá considerar π = 3.14): ')
+piEspecifico = int(input('A questão possui um valor de pi especificado? (Caso não, o sistema irá considerar π = 3.14) // (1: Sim // 2: Não): '))
 
-if (piEspecifico == "Sim"):
-    pi = float(input('Digite o valor de π fornecido pela questão: '))
+if (piEspecifico == 1):
+        pi = float(input('Digite o valor de π fornecido pela questão: '))
+elif (piEspecifico == 2):
+     pi = 3.14
 else:
-    pi = 3.14
+    print('Opção não disponível. Por Favor, digite novamente.')
+    exit()
 
 areaDaBase = pi * (inputRaio ** 2)
 

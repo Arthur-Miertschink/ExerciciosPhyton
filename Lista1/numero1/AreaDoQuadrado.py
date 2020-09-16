@@ -1,5 +1,4 @@
 # b)
-
 print('Calculando a área de um quadrado')
 
 ladoQuadrado = float(input('Digite o lado do quadrado que deseja calcular a área: '))

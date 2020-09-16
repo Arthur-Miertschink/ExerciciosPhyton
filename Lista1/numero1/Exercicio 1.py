@@ -1,8 +1,3 @@
-"""
-Exercício 1:
-"""
-
-# a)
 
 catetoAdjascente = float(input('Qual é a medida do cateto adjascente do triângulo desejado: '))
 

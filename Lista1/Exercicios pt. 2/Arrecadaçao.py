@@ -27,6 +27,8 @@ else:
                 int(input('O espectador trouxe pelo menos 1 kg de alimento para doação? (1 = Sim // 2 = Não): '))
             if idadeDoEspectador < 0:
                 print('A idade foi digitada incorretamente. Por favor, digite novamente.')
+            elif (doouAlimento != 1 and doouAlimento != 2):
+                print('Ocorreu um erro durante o processo de informar se o espectador trouxe ou não a doação. Tente novamente.')
             elif idadeDoEspectador <= 10:
                 valorDoIngresso = 0
                 receitaTotal += valorDoIngresso
